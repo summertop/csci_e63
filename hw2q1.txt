@@ -1,3 +1,4 @@
+# test
 curl -i -H accept:application/json -H content-type:application/json -XPOST http://localhost:7474/db/data/transaction/commit -d '{"statements":[{"statement":"CREATE (matrix1:Movie { title : '\''The Matrix'\'', year : '\''1999-03-31'\'' }) CREATE (matrix3:Movie { title : '\''The Matrix Revolutions'\'', year : '\''2003-10-27'\'' }) CREATE (matrix2:Movie { title : '\''The Matrix Reloaded'\'', year : '\''2003-05-07'\'' }) CREATE (keanu:Actor { name:'\''Keanu Reeves'\'' }) CREATE (laurence:Actor { name:'\''Laurence Fishburne'\'' }) CREATE (carrieanne:Actor { name:'\''Carrie-Anne Moss'\'' }) CREATE (keanu)-[:ACTS_IN { role : '\''Neo'\'' }]->(matrix1) CREATE (keanu)-[:ACTS_IN { role : '\''Neo'\'' }]->(matrix2) CREATE (keanu)-[:ACTS_IN { role : '\''Neo'\'' }]->(matrix3)" } ]}'
 
 CREATE (matrix1:Movie { title : 'The Matrix', year : '1999-03-31' }) 
